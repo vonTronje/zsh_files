@@ -37,6 +37,9 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
+export GOPATH=$HOME/code/go
+
+export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/code/kaeuferportal/command_line_tools_kp/bin
 export PATH=$HOME/.rbenv/bin:$PATH
@@ -46,3 +49,4 @@ eval "$(rbenv init -)"
 
 export EDITOR=vim
 alias be='bundle exec'
+alias cdgo='cd $GOPATH/src/codevault.io/go_projects'
