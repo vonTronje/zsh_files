@@ -38,6 +38,7 @@ unsetopt correct_all
 
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:$HOME/code/kaeuferportal/command_line_tools_kp/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export EDITOR=vim
