@@ -39,7 +39,10 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export PATH=$PATH:$HOME/code/kaeuferportal/command_line_tools_kp/bin
+export PATH=$HOME/.rbenv/bin:$PATH
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+eval "$(rbenv init -)"
+
 export EDITOR=vim
 alias be='bundle exec'
