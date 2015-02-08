@@ -1,3 +1,0 @@
-
-Just a copy of oh-my-zsh. Lazy way of saving my config.
-hagen reminds himself: mv .zshrc ~

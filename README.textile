@@ -1,0 +1,5 @@
+Customized zsh settings. Contains .zshrc, a custom theme and a plugin for
+faster access to my Go repsoitories.
+
+Use setup.sh for a quick start. This will download and set up oh-my-zsh and
+apply my customizations.
