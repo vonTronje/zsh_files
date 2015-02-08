@@ -1,11 +1,14 @@
 #!/bin/bash
 
-# curl -L http://install.ohmyz.sh | sh
 ZSH_FILES=$PWD
+
+curl -L http://install.ohmyz.sh | sh
+rm $HOME/.zshrc
+rm $HOME/.zshrc-e
 
 ln -s $ZSH_FILES/zshrc $HOME/.zshrc
 #
-cp $ZSH_FILES/themes/hagen.zsh-theme $HOME/.oh-my-zsh/themes/hagen.zsh-theme
-cp -r $ZSH_FILES/custom/plugins/goto $HOME/.oh-my-zsh/custom/plugins/goto
+cp $ZSH_FILES/hagen.zsh-theme $HOME/.oh-my-zsh/themes/hagen.zsh-theme
+cp -r $ZSH_FILES/goto $HOME/.oh-my-zsh/custom/plugins/goto
 
 source $HOME/.zshrc
