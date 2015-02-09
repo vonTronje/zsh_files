@@ -3,3 +3,10 @@ faster access to my Go repsoitories.
 
 Use setup.sh for a quick start. This will download and set up oh-my-zsh and
 apply my customizations.
+
+May require a relog as $SHELL is not correctly set. Try
+> $SHELL <Enter>
+> $0 <Enter>
+
+If $SHELL set to anything but /bin/zsh relog and $SHELL should be /bin/zsh.
+
