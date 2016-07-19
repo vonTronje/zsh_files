@@ -3,8 +3,8 @@
 ZSH_FILES=$PWD
 
 curl -L http://install.ohmyz.sh | sh
-rm $HOME/.zshrc
-rm $HOME/.zshrc-e
+rm $HOME/.zshrc 2>/dev/null
+rm $HOME/.zshrc-e 2>/dev/null
 
 ln -s $ZSH_FILES/zshrc $HOME/.zshrc
 
