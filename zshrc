@@ -43,7 +43,10 @@ export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/code/kaeuferportal/command_line_tools_kp/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:$PATH
+read email token <<< $(ruby -e "require 'json'; require 'base64'; string = File.read(ENV['HOME'] + '/.docker/config.json'); hash = JSON.parse(string); credentials = hash['auths']['registry.codevault.io']['auth']; email, token = Base64.decode64(credentials).split(':'); puts email + ' ' + token")
 
+export DOCKER_LOGIN=$email
+export GITLAB_ACCESS_TOKEN=$token
 
 eval "$(rbenv init -)"
 
