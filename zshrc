@@ -40,7 +40,7 @@ unsetopt correct_all
 export GOPATH=$HOME/code/go
 
 export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/code/kaeuferportal/command_line_tools_kp/bin
+export PATH=$PATH:$HOME/code/codevault.io/kaeuferportal/command_line_tools_kp/bin
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 
@@ -58,5 +58,5 @@ eval "$(rbenv init -)"
 export EDITOR=vim
 alias be='bundle exec'
 alias cdgo='cd $GOPATH/src/codevault.io/go_projects'
-alias deploy='$HOME/code/kaeuferportal/deployment/deploy_app.sh deploy'
-alias connect='$HOME/code/kaeuferportal/deployment/deploy_app.sh connect'
+alias deploy='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh deploy'
+alias connect='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh connect'
