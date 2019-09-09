@@ -44,6 +44,7 @@ export PATH=$PATH:$HOME/code/codevault.io/kaeuferportal/command_line_tools_kp/bi
 export PATH=$PATH:$GOPATH/bin
 export PATH=$HOME/.rbenv/bin:$PATH
 
+export LC_ALL=en_US.UTF-8
 
 eval "$(rbenv init -)"
 
