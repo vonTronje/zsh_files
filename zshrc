@@ -53,6 +53,3 @@ alias be='bundle exec'
 alias cdgo='cd $GOPATH/src/codevault.io/go_projects'
 alias deploy='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh deploy'
 alias connect='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh connect'
-
-# Load ssh keys from keychain (see https://www.reddit.com/r/osx/comments/52zn5r/difficulties_with_sshagent_in_macos_sierra/ for more info)
-ssh-add -A &> /dev/null
