@@ -50,6 +50,6 @@ eval "$(rbenv init -)"
 
 export EDITOR=vim
 alias be='bundle exec'
-alias cdgo='cd $GOPATH/src/codevault.io/go_projects'
-alias deploy='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh deploy'
-alias connect='$HOME/code/codevault.io/kaeuferportal/deployment/deploy_app.sh connect'
+alias cdgo='cd $GOPATH/src/codevault/go_projects'
+alias deploy='$HOME/code/codevault/kaeuferportal/deployment/deploy_app.sh deploy'
+alias connect='$HOME/code/codevault/kaeuferportal/deployment/deploy_app.sh connect'
