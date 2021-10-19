@@ -54,3 +54,4 @@ alias kube-production='kubectl config use-context production && aws-vault exec l
 
 export KUBECONFIG="/Users/hagenm/.kube/config:/Users/hagenm/.kube/minikube-config:/Users/hagenm/.kube/staging-config:/Users/hagenm/.kube/production-config"
 
+source ~/.work_credentials
