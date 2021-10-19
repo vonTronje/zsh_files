@@ -46,4 +46,11 @@ export LC_ALL=en_US.UTF-8
 eval "$(rbenv init -)"
 
 export EDITOR=vim
+
 alias be='bundle exec'
+
+alias kube-staging='kubectl config use-context staging && aws-vault exec logistics-staging'
+alias kube-production='kubectl config use-context production && aws-vault exec logistics-production'
+
+export KUBECONFIG="/Users/hagenm/.kube/config:/Users/hagenm/.kube/minikube-config:/Users/hagenm/.kube/staging-config:/Users/hagenm/.kube/production-config"
+
