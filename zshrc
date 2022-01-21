@@ -54,6 +54,10 @@ alias kube-production='kubectl config use-context production && aws-vault exec l
 
 alias logistics-pod='kubectl exec -it "$(kubectl get pods -o name --selector app=logistics | head -n 1)" -- bash'
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export KUBECONFIG="/Users/hagenm/.kube/config:/Users/hagenm/.kube/minikube-config:/Users/hagenm/.kube/staging-config:/Users/hagenm/.kube/production-config"
 
 source ~/.work_credentials
