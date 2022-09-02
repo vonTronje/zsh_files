@@ -52,7 +52,8 @@ alias be='bundle exec'
 alias kube-staging='kubectl config use-context staging && aws-vault exec logistics-staging'
 alias kube-production='kubectl config use-context production && aws-vault exec logistics-production'
 
-alias logistics-pod='kubectl exec -it "$(kubectl get pods -o name --selector app=logistics | head -n 1)" -- bash'
+alias logistics-pod='kubectl exec -it deploy/logistics -- bash'
+alias ms-api-pod='kubectl exec -it deploy/api-console -n cx-api -- bash'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
