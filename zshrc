@@ -55,6 +55,10 @@ alias kube-production='kubectl config use-context production && aws-vault exec l
 alias logistics-pod='kubectl exec -it deploy/logistics -- bash'
 alias ms-api-pod='kubectl exec -it deploy/api-console -n cx-api -- bash'
 
+view_secrets() {
+  kubectl get secret $1 -o go-template='{{range $k,$v := .data}}{{printf "%s: " $k}}{{if not $v}}{{$v}}{{else}}{{$v | base64decode}}{{end}}{{"\n"}}{{end}}'
+}
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
